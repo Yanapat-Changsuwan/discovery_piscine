@@ -1,0 +1,6 @@
+age = input("Please tell me your age: ")
+age = int(age)
+print(f"You are currently {age} years old.")
+print(f"in 10 years, you will be {age + 10} years old.")
+print(f"in 20 years, you will be {age + 20} years old.")
+print(f"in 30 years, you will be {age + 30} years old.")
