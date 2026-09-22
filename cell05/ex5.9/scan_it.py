@@ -1,11 +1,12 @@
 import sys
-keyword = sys.argv[1:2]
-txt = sys.argv[2:3]
-count = 0
-if len(txt) < 1 or len(keyword) < 1:
+import re
+if len(sys.argv) < 3:
     print("none")
 else:
-    for i in range(len(txt)):
-        if txt[i] == keyword:
-            count += 1
-    print(count)
+    keyword = sys.argv[1]
+    txt = sys.argv[2]
+    count = 0
+    ans = re.findall(keyword, txt)
+    if ans:
+        count = len(ans)
+        print(count)
