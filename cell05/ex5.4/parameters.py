@@ -1,2 +1,2 @@
 import sys
-print(len(sys.argv) - 1)
+print(f"Number of parameters : {len(sys.argv) - 1}.")
