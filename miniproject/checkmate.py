@@ -42,7 +42,6 @@ def checkmate(raw_board):
             threatens = _slides_to_king(board, r, c, QUEEN_DIRS)
         else:
             threatens = False
-
         if threatens:
             print("Success")
             return
