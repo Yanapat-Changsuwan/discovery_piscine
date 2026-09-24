@@ -48,7 +48,6 @@ class Board:
         return ch in VALID_PIECES
 
     def pieces(self):
-        
         for r in range(self.size):
             for c in range(self.size):
                 ch = self.grid[r][c]
