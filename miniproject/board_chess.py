@@ -4,17 +4,16 @@ class BoardError(Exception):
     pass
 
 class Board:
-
     def __init__(self, raw_board):
         if not isinstance(raw_board, str):
             raise BoardError("board must be a string")
-
+        
         rows = raw_board.split("\n")
 
         if rows and rows[-1] == "":
             rows.pop()
 
-        if not rows:
+        if rows == []:
             raise BoardError("empty board")
 
         size = len(rows)
