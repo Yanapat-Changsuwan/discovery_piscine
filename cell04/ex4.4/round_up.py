@@ -1,5 +1,8 @@
-inp = float(input("Give me a number: "))
-if inp > int(inp):
-    print(int(inp) + 1)
+#!/usr/bin/env python3
+import sys
+if len(sys.argv) == 1:
+    print("none")
 else:
-    print(int(inp))
+    print(f"parameters: {len(sys.argv) - 1}")
+    for parameter in sys.argv[1:]:
+        print(f"{parameter}: {len(parameter)}")
